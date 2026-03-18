@@ -206,7 +206,7 @@ Feel free to fork this project and customize it for your own use!
 
 ## 📧 Contact
 
-For questions or suggestions, reach out at karthik.vj@example.com
+For questions or suggestions, reach out at veerajayanth07@gmail.com
 
 ---
 
