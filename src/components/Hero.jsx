@@ -9,14 +9,13 @@ const Hero = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const phrases = [
-    'Java Developer',
-    'Spring Boot Expert',
-    'Microservices Architect',
-    'API Builder'
-  ];
-  
   useEffect(() => {
+    const phrases = [
+      'Java Developer',
+      'Spring Boot Expert',
+      'Microservices Architect',
+      'API Builder'
+    ];
     const currentPhrase = phrases[currentPhraseIndex];
     const typingSpeed = isDeleting ? 50 : 100;
     const pauseTime = 2000;
@@ -39,7 +38,7 @@ const Hero = () => {
     }, typingSpeed);
     
     return () => clearTimeout(timeout);
-  }, [typedText, isDeleting, currentPhraseIndex, phrases]);
+  }, [typedText, isDeleting, currentPhraseIndex]);
   
   return (
     <section id="home">
