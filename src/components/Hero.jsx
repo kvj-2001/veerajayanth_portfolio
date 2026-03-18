@@ -39,7 +39,7 @@ const Hero = () => {
     }, typingSpeed);
     
     return () => clearTimeout(timeout);
-  }, [typedText, isDeleting, currentPhraseIndex]);
+  }, [typedText, isDeleting, currentPhraseIndex, phrases]);
   
   return (
     <section id="home">
